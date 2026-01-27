@@ -6,3 +6,5 @@ Federated Generative Adversarial Divergence (FedGAD) is a plug-and-play modular 
 
 #===============Required environment is Anaconda, Python ====================
 
+Refer to ReadMe.pdf for setup and execution instructions 
+
