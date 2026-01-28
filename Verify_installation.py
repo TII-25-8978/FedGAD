@@ -173,7 +173,7 @@ def check_datasets():
             print_check(name, False, "Not found")
     
     if not found_any:
-        print("\n    ⚠ No datasets found. Please download and place datasets in datasets/ directory.")
+        print("\n     No datasets found. Please download and place datasets in datasets/ directory.")
     
     return found_any
 
@@ -247,12 +247,12 @@ def print_summary(checks):
     print(f"Failed: {failed}")
     
     if failed == 0:
-        print("\n✓ All checks passed! Your installation is ready.")
+        print("\n All checks passed! Your installation is ready.")
         print("\nNext steps:")
         print("  1. Download datasets to datasets/ directory")
         print("  2. Run: python main.py")
     else:
-        print("\n✗ Some checks failed. Please review the output above.")
+        print("\n Some checks failed. Please review the output above.")
         print("\nSuggested actions:")
         if not checks.get("Python Version"):
             print("  - Install Python 3.8 or higher")
@@ -295,4 +295,5 @@ def main():
 
 if __name__ == "__main__":
     exit_code = main()
+
     sys.exit(exit_code)
